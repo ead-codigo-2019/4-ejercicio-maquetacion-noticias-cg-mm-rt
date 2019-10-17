@@ -2,6 +2,32 @@
 	font-family: 'Roboto', sans-serif;
 }
 body{
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline-block;
+}
+.noticias {
+	text-align: center;
+	order: 1;
+}
+.articulo{
+	order: 2;
+}
+img{
+	min-width: 100%;
+}
+.caja {
+	order: 3;
+	max-width: auto;
+}
+.texto{
+	order: 4;
+	max-width: auto;
+	margin-bottom: 40px;
+}
+@media (min-width: 640px) {
+body{
 	display: grid;
 	grid-template-columns: 10% 60% 20%;
 	grid-template-rows: auto auto ;
@@ -33,10 +59,8 @@ margin-bottom: 20px;
 }
 img{
 	float: left;
-	max-width: 300px;
-	
+	min-width: 300px;
 }
-
 button{
 	margin-top: 20px;
 	color: azure;
@@ -46,13 +70,5 @@ button{
 	width: 150px;
 	height: 30px;
 }
-
-@media (max-width: 640px) {.html{
-
-	width: 640px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
-
-}
